@@ -39,6 +39,8 @@ const typeDefs = gql`
     length: Int @deprecated(reason: "Use durationInSeconds")
     "The track's full duration, in seconds"
     durationInSeconds: Int
+    "Indicates if the track is currently open or not"
+    active: Boolean
     "The number of modules this track contains"
     modulesCount: Int
     "The track's complete description, can be in markdown format"
